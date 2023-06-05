@@ -80,7 +80,7 @@
             </div>
             <div class="noticias">
 
-                <div class="noticia1">
+                <div class="noticia1" id="destacada">
                         <a href="http://www.ifsul.edu.br/ultimas-noticias/5427-inteligencia-artificial-sera-tema-de-palestra-no-ifsul"><img src="noticia5.jpg" class="imagen"
                             width="200px"
                             height="200px">
@@ -224,21 +224,29 @@
                     </div>
                     <div class="redes">
                         <h4> Siga-nos nas redes sociais</h4>
-                        <img src="" alt="insta"
-                        width="30px">
-                        <img src="" alt="tweet"
-                        width="30px">
-                        <img src="" alt="face"
-                        width="30px">
+                        <a href="#">
+                            <img src="insta.png" alt="insta"
+                            width="30px">
+                        </a>
                         
+                        <a href="#">
+                            <img src="tweet.png" alt="tweet"
+                            width="30px">
+                        </a>
+                        
+                        <a href="#">
+                            <img src="face.png" alt="face"
+                            width="30px">
+                        </a>                        
                     </div>
                     <div class="inscrevase">
                         <h4>Nosso canal de noticias</h4>
                         <p>Deseja receber mais conteudo?</p>
-                        <input type="text" name="Email" size="35" />
-                        <button class="botonEmail">
-                            Inscrever-se
-                        </button>
+                        <form>
+                            <input  id="input" type="text" name="Email" size="35" />
+                            <button type="button" class="botonEmail" onclick="Inscrito()">Inscrever-se</button>
+                            
+                        </form>
                         
                     </div>
 

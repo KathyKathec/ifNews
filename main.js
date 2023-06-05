@@ -39,3 +39,11 @@ const contador = (dataLimite, elemento, mensajemFinal) =>{
 };
 
 contador('Thu Nov 30 2023 15:03:08 GMT-0300',"relogio",'Acabou o ultimo periodo de processo seletivo, em breve sera publicado outro');
+
+function Inscrito(){
+    alert('Inscrição realizada com sucesso')
+    const email=document.querySelector('#input');
+    email.value='';
+
+}
+
