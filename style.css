@@ -459,7 +459,7 @@ footer{
     transition: 1s;
 }
 
-input{
+input:not(#input){
     display: none;
 }
 .slides-imagem{
