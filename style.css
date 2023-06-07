@@ -306,10 +306,15 @@ a{
     grid-row-end: 15;
 
     
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    
     margin: 0 auto;
     width: 450px;
     height: 800px;
     overflow: hidden;
+
 }
 h3{
     text-align: center;
@@ -329,10 +334,17 @@ h3{
 .depoimento{
     width: 50%;
     position: relative;
+    text-align: center;
+    background: linear-gradient(72deg,rgb(224, 209, 209) 1%, rgb(89, 0, 255) 99%);
+}
+.first{
+    background: linear-gradient(72deg,rgb(224, 209, 209) 1%, rgb(89, 0, 255) 99%);
+    text-align: center;
 }
 .depoimento img{
     width: 450px;
     text-align: center;
+    
 }
 .manual-navegacion{
     position:absolute;
@@ -356,12 +368,15 @@ h3{
 }
 #radio1:checked ~ .first{
     margin-left: 0;
+    transition: 1s;
 }
 #radio2:checked ~ .first{
-    margin-left:-45%;
+    margin-left:-50%;
+    transition: 1s;
 }
 #radio3:checked ~ .first{
-    margin-left:-95%;
+    margin-left:-100%;
+    transition: 1s;
 }
 
 
@@ -479,15 +494,19 @@ input:not(#input){
 
 #rad-1:checked ~ .slide-1 {
     margin-left: 0;
+    transition: 1.6s;
 }
 #rad-2:checked ~ .slide-1 {
     margin-left: -25%;
+    transition: 1.6s;
 }
 #rad-3:checked ~ .slide-1 {
     margin-left: -50%;
+    transition: 1.6s;
 }
 #rad-4:checked ~ .slide-1 {
     margin-left: -75%;
+    transition: 1.6s;
 }
 
 

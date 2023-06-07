@@ -24,8 +24,9 @@ const contador = (dataLimite, elemento, mensajemFinal) =>{
 
     const tempoAtualiza = setInterval(() =>{
         let tiempo=getTiempoRestante(dataLimite);
-        let texto = tiempo.diasRestantes +"dias"+ tiempo.horasRestantes+" horas";
-        el.innerHTML = texto;
+        let texto = " "+tiempo.diasRestantes +" dias  e"+" " +tiempo.horasRestantes+" "+" horas";
+       // console.log(elemento);
+        document.querySelector(elemento).innerHTML = texto;
 
 
         if(tiempo.tempoRestante<=1){
@@ -38,7 +39,7 @@ const contador = (dataLimite, elemento, mensajemFinal) =>{
 
 };
 
-contador('Thu Nov 30 2023 15:03:08 GMT-0300',"relogio",'Acabou o ultimo periodo de processo seletivo, em breve sera publicado outro');
+contador('Thu Nov 30 2023 15:03:08 GMT-0300',"#relogio",'Acabou o ultimo periodo de processo seletivo, em breve sera publicado outro');
 
 function Inscrito(){
     alert('Inscrição realizada com sucesso')
